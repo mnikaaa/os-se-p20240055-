@@ -1,0 +1,63 @@
+/home/monika-thai
+total 19000
+drwxr-x--- 21 monika-thai monika-thai     4096 Mar 30 21:40 .
+drwxr-xr-x  3 root        root            4096 Nov  9 23:54 ..
+-rw-------  1 monika-thai monika-thai    23389 Mar 30 22:34 .bash_history
+-rw-r--r--  1 monika-thai monika-thai      220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 monika-thai monika-thai     3771 Mar 31  2024 .bashrc
+drwx------ 16 monika-thai monika-thai     4096 Mar 24 16:07 .cache
+drwxrwxr-x  2 monika-thai monika-thai     4096 Nov 10 20:37 captures
+-rw-rw-r--  1 monika-thai monika-thai 19308942 Mar 30 16:05 cloudflared.deb
+drwx------ 20 monika-thai monika-thai     4096 Mar 19 12:49 .config
+drwxr-xr-x  3 monika-thai monika-thai     4096 Mar 30 21:38 Desktop
+drwxr-xr-x  2 monika-thai monika-thai     4096 Feb  2 13:27 Documents
+drwxrwxr-x  3 monika-thai monika-thai     4096 Mar 19 10:41 .dotnet
+drwxr-xr-x  2 monika-thai monika-thai     4096 Mar 19 11:03 Downloads
+-rw-rw-r--  1 monika-thai monika-thai       59 Mar 12 16:46 .gitconfig
+drwx------  2 monika-thai monika-thai     4096 Mar 30 16:38 .gnupg
+-rw-------  1 monika-thai monika-thai       20 Mar 30 21:40 .lesshst
+drwx------  4 monika-thai monika-thai     4096 Nov  9 23:54 .local
+drwxr-xr-x  2 monika-thai monika-thai     4096 Nov  9 23:54 Music
+-rw-rw-r--  1 monika-thai monika-thai      640 Mar 19 10:01 packages.microsoft.gpg
+drwxr-xr-x  3 monika-thai monika-thai     4096 Jan  4 18:29 Pictures
+drwx------  3 monika-thai monika-thai     4096 Mar 19 10:02 .pki
+-rw-r--r--  1 monika-thai monika-thai      807 Mar 31  2024 .profile
+drwxr-xr-x  2 monika-thai monika-thai     4096 Nov  9 23:54 Public
+drwx------  6 monika-thai monika-thai     4096 Feb  2 15:32 snap
+drwx------  2 monika-thai monika-thai     4096 Mar 30 16:06 .ssh
+-rw-r--r--  1 monika-thai monika-thai        0 Nov 10 11:20 .sudo_as_admin_successful
+drwxr-xr-x  2 monika-thai monika-thai     4096 Nov  9 23:54 Templates
+drwxr-xr-x  2 monika-thai monika-thai     4096 Jan  4 18:30 Videos
+drwxrwxr-x  4 monika-thai monika-thai     4096 Mar 19 10:02 .vscode
+-rw-rw-r--  1 monika-thai monika-thai      177 Mar 19 10:01 .wget-hsts
+drwxrwxr-x  4 monika-thai monika-thai     4096 Mar 19 12:49 .wine
+--- Root directory (/) ---
+/
+bin
+bin.usr-is-merged
+boot
+cdrom
+dev
+etc
+home
+lib
+lib64
+lib.usr-is-merged
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+sbin.usr-is-merged
+snap
+srv
+swap.img
+sys
+tmp
+usr
+var
+--- Back to home ---
+/home/monika-thai

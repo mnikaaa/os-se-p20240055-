@@ -1,0 +1,243 @@
+=== Task 6: Advanced Listing & Directory Audit ===
+--- Recursive Listing (ls -R) ---
+techcorp:
+engineering
+hr
+marketing
+
+techcorp/engineering:
+backend
+devops
+frontend
+
+techcorp/engineering/backend:
+app.js
+database.sql
+pipeline_backup.txt
+server_config.txt
+
+techcorp/engineering/devops:
+docker-compose.yml
+Dockerfile
+pipeline.txt
+security_audit.txt
+server_notice.txt
+
+techcorp/engineering/frontend:
+frontend_config.txt
+index.html
+styles.css
+
+techcorp/hr:
+onboarding
+policies
+
+techcorp/hr/onboarding:
+checklist.txt
+handbook.txt
+leave_policy.txt
+welcome_guide.txt
+
+techcorp/hr/policies:
+leave_policy.txt
+remote_work.txt
+
+techcorp/marketing:
+assets
+campaigns
+
+techcorp/marketing/assets:
+banner.jpg
+brochure.pdf
+logo_brief.txt
+logo.png
+
+techcorp/marketing/campaigns:
+q1_2026_launch.txt
+social_media.txt
+
+--- Sort by Size: engineering/ (ls -lS) ---
+total 4
+-rw-rw-r-- 1 monika-thai monika-thai 26 Mar 30 22:58 frontend_config.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 index.html
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 styles.css
+total 8
+-rw-rw-r-- 1 monika-thai monika-thai 29 Mar 30 23:15 pipeline_backup.txt
+-rw-rw-r-- 1 monika-thai monika-thai 29 Mar 30 22:58 server_config.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 app.js
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 database.sql
+total 12
+-rw-rw-r-- 1 monika-thai monika-thai 48 Mar 30 23:08 server_notice.txt
+-rw-rw-r-- 1 monika-thai monika-thai 34 Mar 30 23:15 security_audit.txt
+-rw-rw-r-- 1 monika-thai monika-thai 29 Mar 30 22:58 pipeline.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 docker-compose.yml
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 Dockerfile
+
+--- Sort by Time: techcorp/ (ls -lt) ---
+total 8
+-rw-rw-r-- 1 monika-thai monika-thai 39 Mar 30 22:58 leave_policy.txt
+-rw-rw-r-- 1 monika-thai monika-thai 32 Mar 30 22:58 remote_work.txt
+total 12
+-rw-rw-r-- 1 monika-thai monika-thai 39 Mar 30 23:08 leave_policy.txt
+-rw-rw-r-- 1 monika-thai monika-thai 23 Mar 30 23:08 handbook.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 checklist.txt
+-rw-rw-r-- 1 monika-thai monika-thai 52 Mar 30 22:58 welcome_guide.txt
+total 8
+-rw-rw-r-- 1 monika-thai monika-thai 32 Mar 30 22:58 q1_2026_launch.txt
+-rw-rw-r-- 1 monika-thai monika-thai 35 Mar 30 22:58 social_media.txt
+
+--- Human-Readable (ls -lh) ---
+total 4.0K
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 banner.jpg
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 brochure.pdf
+-rw-rw-r-- 1 monika-thai monika-thai 22 Mar 30 23:08 logo_brief.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 logo.png
+total 12K
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 docker-compose.yml
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 Dockerfile
+-rw-rw-r-- 1 monika-thai monika-thai 29 Mar 30 22:58 pipeline.txt
+-rw-rw-r-- 1 monika-thai monika-thai 34 Mar 30 23:15 security_audit.txt
+-rw-rw-r-- 1 monika-thai monika-thai 48 Mar 30 23:08 server_notice.txt
+
+--- Reverse Sort by Size (ls -rlS) ---
+total 8
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 database.sql
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 app.js
+-rw-rw-r-- 1 monika-thai monika-thai 29 Mar 30 22:58 server_config.txt
+-rw-rw-r-- 1 monika-thai monika-thai 29 Mar 30 23:15 pipeline_backup.txt
+
+--- Reverse Sort by Time (ls -rlt) ---
+total 12
+-rw-rw-r-- 1 monika-thai monika-thai 52 Mar 30 22:58 welcome_guide.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 checklist.txt
+-rw-rw-r-- 1 monika-thai monika-thai 23 Mar 30 23:08 handbook.txt
+-rw-rw-r-- 1 monika-thai monika-thai 39 Mar 30 23:08 leave_policy.txt
+
+--- Combined: Recursive + Human-Readable + Sort by Size (ls -lhRS) ---
+techcorp/:
+total 12K
+drwxrwxr-x 5 monika-thai monika-thai 4.0K Mar 30 22:58 engineering
+drwxrwxr-x 4 monika-thai monika-thai 4.0K Mar 30 22:58 hr
+drwxrwxr-x 4 monika-thai monika-thai 4.0K Mar 30 23:08 marketing
+
+techcorp/engineering:
+total 12K
+drwxrwxr-x 2 monika-thai monika-thai 4.0K Mar 30 23:15 backend
+drwxrwxr-x 2 monika-thai monika-thai 4.0K Mar 30 23:15 devops
+drwxrwxr-x 2 monika-thai monika-thai 4.0K Mar 30 23:15 frontend
+
+techcorp/engineering/backend:
+total 8.0K
+-rw-rw-r-- 1 monika-thai monika-thai 29 Mar 30 23:15 pipeline_backup.txt
+-rw-rw-r-- 1 monika-thai monika-thai 29 Mar 30 22:58 server_config.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 app.js
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 database.sql
+
+techcorp/engineering/devops:
+total 12K
+-rw-rw-r-- 1 monika-thai monika-thai 48 Mar 30 23:08 server_notice.txt
+-rw-rw-r-- 1 monika-thai monika-thai 34 Mar 30 23:15 security_audit.txt
+-rw-rw-r-- 1 monika-thai monika-thai 29 Mar 30 22:58 pipeline.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 docker-compose.yml
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 Dockerfile
+
+techcorp/engineering/frontend:
+total 4.0K
+-rw-rw-r-- 1 monika-thai monika-thai 26 Mar 30 22:58 frontend_config.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 index.html
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 styles.css
+
+techcorp/hr:
+total 8.0K
+drwxrwxr-x 2 monika-thai monika-thai 4.0K Mar 30 23:08 onboarding
+drwxrwxr-x 2 monika-thai monika-thai 4.0K Mar 30 23:15 policies
+
+techcorp/hr/onboarding:
+total 12K
+-rw-rw-r-- 1 monika-thai monika-thai 52 Mar 30 22:58 welcome_guide.txt
+-rw-rw-r-- 1 monika-thai monika-thai 39 Mar 30 23:08 leave_policy.txt
+-rw-rw-r-- 1 monika-thai monika-thai 23 Mar 30 23:08 handbook.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 checklist.txt
+
+techcorp/hr/policies:
+total 8.0K
+-rw-rw-r-- 1 monika-thai monika-thai 39 Mar 30 22:58 leave_policy.txt
+-rw-rw-r-- 1 monika-thai monika-thai 32 Mar 30 22:58 remote_work.txt
+
+techcorp/marketing:
+total 8.0K
+drwxrwxr-x 2 monika-thai monika-thai 4.0K Mar 30 23:08 assets
+drwxrwxr-x 2 monika-thai monika-thai 4.0K Mar 30 23:15 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-rw-r-- 1 monika-thai monika-thai 22 Mar 30 23:08 logo_brief.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 banner.jpg
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 brochure.pdf
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 monika-thai monika-thai 35 Mar 30 22:58 social_media.txt
+-rw-rw-r-- 1 monika-thai monika-thai 32 Mar 30 22:58 q1_2026_launch.txt
+
+--- Challenge Investigation ---
+total 12
+-rw-rw-r-- 1 monika-thai monika-thai 39 Mar 30 23:08 leave_policy.txt
+-rw-rw-r-- 1 monika-thai monika-thai 23 Mar 30 23:08 handbook.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 checklist.txt
+-rw-rw-r-- 1 monika-thai monika-thai 52 Mar 30 22:58 welcome_guide.txt
+techcorp/marketing/:
+total 8.0K
+drwxrwxr-x 2 monika-thai monika-thai 4.0K Mar 30 23:08 assets
+drwxrwxr-x 2 monika-thai monika-thai 4.0K Mar 30 23:15 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 banner.jpg
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 brochure.pdf
+-rw-rw-r-- 1 monika-thai monika-thai 22 Mar 30 23:08 logo_brief.txt
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 monika-thai monika-thai 32 Mar 30 22:58 q1_2026_launch.txt
+-rw-rw-r-- 1 monika-thai monika-thai 35 Mar 30 22:58 social_media.txt
+total 12
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 Dockerfile
+-rw-rw-r-- 1 monika-thai monika-thai  0 Mar 30 22:58 docker-compose.yml
+-rw-rw-r-- 1 monika-thai monika-thai 29 Mar 30 22:58 pipeline.txt
+-rw-rw-r-- 1 monika-thai monika-thai 34 Mar 30 23:15 security_audit.txt
+-rw-rw-r-- 1 monika-thai monika-thai 48 Mar 30 23:08 server_notice.txt
+total 19M
+-rw-rw-r--  1 monika-thai monika-thai  19M Mar 30 16:05 cloudflared.deb
+-rw-------  1 monika-thai monika-thai  27K Mar 30 22:55 .bash_history
+drwxr-x--- 21 monika-thai monika-thai 4.0K Mar 30 21:40 .
+drwxr-xr-x  3 root        root        4.0K Nov  9 23:54 ..
+drwx------ 16 monika-thai monika-thai 4.0K Mar 24 16:07 .cache
+drwxrwxr-x  2 monika-thai monika-thai 4.0K Nov 10 20:37 captures
+drwx------ 20 monika-thai monika-thai 4.0K Mar 19 12:49 .config
+drwxr-xr-x  3 monika-thai monika-thai 4.0K Mar 30 21:38 Desktop
+drwxr-xr-x  2 monika-thai monika-thai 4.0K Feb  2 13:27 Documents
+drwxrwxr-x  3 monika-thai monika-thai 4.0K Mar 19 10:41 .dotnet
+drwxr-xr-x  2 monika-thai monika-thai 4.0K Mar 19 11:03 Downloads
+drwx------  2 monika-thai monika-thai 4.0K Mar 30 22:57 .gnupg
+drwx------  4 monika-thai monika-thai 4.0K Nov  9 23:54 .local
+drwxr-xr-x  2 monika-thai monika-thai 4.0K Nov  9 23:54 Music
+drwxr-xr-x  3 monika-thai monika-thai 4.0K Jan  4 18:29 Pictures
+drwx------  3 monika-thai monika-thai 4.0K Mar 19 10:02 .pki
+drwxr-xr-x  2 monika-thai monika-thai 4.0K Nov  9 23:54 Public
+drwx------  6 monika-thai monika-thai 4.0K Feb  2 15:32 snap
+drwx------  2 monika-thai monika-thai 4.0K Mar 30 16:06 .ssh
+drwxr-xr-x  2 monika-thai monika-thai 4.0K Nov  9 23:54 Templates
+drwxr-xr-x  2 monika-thai monika-thai 4.0K Jan  4 18:30 Videos
+drwxrwxr-x  4 monika-thai monika-thai 4.0K Mar 19 10:02 .vscode
+drwxrwxr-x  4 monika-thai monika-thai 4.0K Mar 19 12:49 .wine
+-rw-r--r--  1 monika-thai monika-thai 3.7K Mar 31  2024 .bashrc
+-rw-r--r--  1 monika-thai monika-thai  807 Mar 31  2024 .profile
+-rw-rw-r--  1 monika-thai monika-thai  640 Mar 19 10:01 packages.microsoft.gpg
+-rw-r--r--  1 monika-thai monika-thai  220 Mar 31  2024 .bash_logout
+-rw-rw-r--  1 monika-thai monika-thai  177 Mar 19 10:01 .wget-hsts
+-rw-rw-r--  1 monika-thai monika-thai   59 Mar 12 16:46 .gitconfig
+-rw-------  1 monika-thai monika-thai   20 Mar 30 21:40 .lesshst
+-rw-r--r--  1 monika-thai monika-thai    0 Nov 10 11:20 .sudo_as_admin_successful
