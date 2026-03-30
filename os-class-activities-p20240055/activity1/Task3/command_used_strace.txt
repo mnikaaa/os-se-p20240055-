@@ -1,0 +1,6 @@
+strace -e trace=openat,read,write,close ./file_creator_lib
+strace -e trace=openat,read,write,close ./file_creator_sys
+strace -e trace=openat,read,write,close ./file_reader_lib
+strace -e trace=openat,read,write,close ./file_reader_sys
+strace -c ./file_creator_lib
+strace -c ./file_creator_sys
