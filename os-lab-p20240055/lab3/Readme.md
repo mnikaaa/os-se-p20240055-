@@ -91,7 +91,8 @@ Show the GRUB menu with your custom background image visible behind the menu tex
 Show the GRUB advanced options and the recovery root shell with the output of `whoami`, `mount | grep "on / "`, and `uname -r`.
 
 <!-- Insert your screenshot below: -->
-![Task 3 Recovery](images/task3_recovery.png)
+<img width="1280" height="685" alt="image" src="https://github.com/user-attachments/assets/52db5d6d-bdcd-4ded-8da6-88465f8c568d" />
+
 
 ---
 
@@ -100,7 +101,9 @@ Show the GRUB advanced options and the recovery root shell with the output of `w
 Show the `grub>` command line prompt that appears after the GRUB configuration was removed.
 
 <!-- Insert your screenshot below: -->
-![Task 3 Break](images/task3_break.png)
+<img width="1280" height="638" alt="image" src="https://github.com/user-attachments/assets/95e7aa16-fb62-4321-ad66-bb13080310ce" />
+
+
 
 ---
 
@@ -109,7 +112,8 @@ Show the `grub>` command line prompt that appears after the GRUB configuration w
 Show the manual GRUB commands you typed (`set root`, `linux`, `initrd`, `boot`) and the system beginning to start up.
 
 <!-- Insert your screenshot below: -->
-![Task 3 Manual Boot](images/task3_manual_boot.png)
+<img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/da8c8031-af04-4963-84cc-4d2875ff6757" />
+
 
 ---
 
@@ -118,7 +122,8 @@ Show the manual GRUB commands you typed (`set root`, `linux`, `initrd`, `boot`) 
 Show the output of `ls -la /boot/grub/grub.cfg` and `head -5 /boot/grub/grub.cfg` confirming the configuration was restored, plus `uname -r` and `uptime` after normal boot.
 
 <!-- Insert your screenshot below: -->
-![Task 3 Restored](images/task3_restored.png)
+<img width="811" height="225" alt="image" src="https://github.com/user-attachments/assets/fcb0f9bb-cda8-477f-bd4b-78259a73e186" />
+
 
 ---
 
