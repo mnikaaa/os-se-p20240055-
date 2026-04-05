@@ -61,7 +61,8 @@ Show your VM's snapshot panel confirming the "Before Boot Lab" snapshot was crea
 Show the modified `/etc/default/grub` with `GRUB_TIMEOUT=10` and the cleared `GRUB_CMDLINE_LINUX_DEFAULT`.
 
 <!-- Insert your screenshot below: -->
-![Task 3 Timeout](images/task3_timeout.png)
+<img width="805" height="488" alt="Screenshot from 2026-04-05 18-15-03" src="https://github.com/user-attachments/assets/d61fb487-e063-45b6-a72a-a89629cb3762" />
+
 
 ---
 
@@ -70,7 +71,8 @@ Show the modified `/etc/default/grub` with `GRUB_TIMEOUT=10` and the cleared `GR
 Show the GRUB menu displaying your custom "TechCorp Training VM — Boot Standard" entry.
 
 <!-- Insert your screenshot below: -->
-![Task 3 Custom Entry](images/task3_custom_entry.png)
+<img width="1280" height="491" alt="image" src="https://github.com/user-attachments/assets/e777bdac-f6a2-418c-b1b0-a1bc6438f09e" />
+
 
 ---
 
