@@ -81,7 +81,8 @@ Show the GRUB menu displaying your custom "TechCorp Training VM — Boot Standar
 Show the GRUB menu with your custom background image visible behind the menu text.
 
 <!-- Insert your screenshot below: -->
-![Task 3 Background](images/task3_background.png)
+<img width="1280" height="683" alt="image" src="https://github.com/user-attachments/assets/1003e5e2-1d69-40b9-a574-913eccad62c6" />
+
 
 ---
 
