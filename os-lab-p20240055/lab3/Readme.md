@@ -132,7 +132,8 @@ Show the output of `ls -la /boot/grub/grub.cfg` and `head -5 /boot/grub/grub.cfg
 Show the GRUB menu with your custom color scheme (challenge 3b) and the `grep` output for the root partition UUID (challenge 3c).
 
 <!-- Insert your screenshot below: -->
-![Task 3 Challenge](images/task3_challenge.png)
+<img width="1269" height="952" alt="image" src="https://github.com/user-attachments/assets/ec02ca4a-0a41-4583-82e9-aef9dbf3d572" />
+
 
 ---
 
@@ -141,7 +142,8 @@ Show the GRUB menu with your custom color scheme (challenge 3b) and the `grep` o
 Show the terminal where you ran your shared objects challenge commands **4a–4d** (inspecting `ssh`/`curl` libraries, listing `libm*` files, following the `libc.so.6` symlink chain, and compiling/inspecting a test program). Show the `ldd` and `readlink` output.
 
 <!-- Insert your screenshot below: -->
-![Task 4 Challenge](images/task4_challenge.png)
+<img width="1652" height="682" alt="image" src="https://github.com/user-attachments/assets/34340aa9-301a-47dd-b8a2-00250f7d0f19" />
+
 
 ---
 
@@ -150,7 +152,8 @@ Show the terminal where you ran your shared objects challenge commands **4a–4d
 Show **both partners' screens** with the agreed header file (`techcorp_sysinfo.h`) open, proving the API was designed collaboratively.
 
 <!-- Insert your screenshot below: -->
-![Task 5 Pair Design](images/task5_pair_design.png)
+<img width="888" height="397" alt="image" src="https://github.com/user-attachments/assets/b90a9997-04d9-49cd-9b17-8e48b5dd2007" />
+
 
 ---
 
@@ -159,7 +162,11 @@ Show **both partners' screens** with the agreed header file (`techcorp_sysinfo.h
 Show the final integration test: `ldconfig -p | grep techcorp` showing registration, `ldd ./sysinfo_test_v2` showing the library is resolved, and the v2 test program output displaying hostname, uptime, CPU cores, and memory.
 
 <!-- Insert your screenshot below: -->
-![Task 5 Pair Integration](images/task5_pair_integration.png)
+
+<img width="1175" height="187" alt="Screenshot from 2026-04-05 23-45-29" src="https://github.com/user-attachments/assets/1d942a52-4dfb-4595-9e79-fa7d1f376467" />
+
+<img width="1061" height="505" alt="image" src="https://github.com/user-attachments/assets/4a4fba51-9b65-41da-9561-2778b1e70ac6" />
+
 
 ---
 
@@ -172,4 +179,5 @@ history | tail -n 100
 ```
 
 <!-- Insert your screenshot below: -->
-![Full History](images/full_history.png)
+<img width="1005" height="659" alt="image" src="https://github.com/user-attachments/assets/e5fa68db-2638-4d73-9659-057715262573" />
+
