@@ -1,0 +1,101 @@
+=== Full Command History ===
+ 1357  cd lab3
+ 1358  echo "=== Task 4: Shared Objects Exploration ===" > task4_shared_objects.txt
+ 1359  echo "--- Shared libraries used by /bin/ls ---" >> task4_shared_objects.txt
+ 1360  ldd /bin/ls >> task4_shared_objects.txt
+ 1361  echo "" >> task4_shared_objects.txt
+ 1362  echo "--- Shared libraries used by /bin/bash ---" >> task4_shared_objects.txt
+ 1363  ldd /bin/bash >> task4_shared_objects.txt
+ 1364  echo "" >> task4_shared_objects.txt
+ 1365  echo "--- Shared libraries used by /usr/bin/grep ---" >> task4_shared_objects.txt
+ 1366  ldd /usr/bin/grep >> task4_shared_objects.txt
+ 1367  echo "" >> task4_shared_objects.txt
+ 1368  echo "--- File type of libc ---" >> task4_shared_objects.txt
+ 1369  file /lib/x86_64-linux-gnu/libc.so.* >> task4_shared_objects.txt 2>&1
+ 1370  echo "" >> task4_shared_objects.txt
+ 1371  echo "--- Contents of /lib/x86_64-linux-gnu/ (first 30 lines) ---" >> task4_shared_objects.txt
+ 1372  ls /lib/x86_64-linux-gnu/*.so* | head -30 >> task4_shared_objects.txt
+ 1373  echo "" >> task4_shared_objects.txt
+ 1374  echo "--- Contents of /usr/lib/ (first 20 lines) ---" >> task4_shared_objects.txt
+ 1375  ls /usr/lib/*.so* 2>/dev/null | head -20 >> task4_shared_objects.txt
+ 1376  echo "" >> task4_shared_objects.txt
+ 1377  echo "--- Shared library cache: searching for 'libc' ---" >> task4_shared_objects.txt
+ 1378  ldconfig -p | grep libc >> task4_shared_objects.txt
+ 1379  echo "" >> task4_shared_objects.txt
+ 1380  echo "--- Shared library cache: searching for 'libpthread' ---" >> task4_shared_objects.txt
+ 1381  ldconfig -p | grep libpthread >> task4_shared_objects.txt
+ 1382  echo "" >> task4_shared_objects.txt
+ 1383  echo "--- Total number of cached shared libraries ---" >> task4_shared_objects.txt
+ 1384  ldconfig -p | wc -l >> task4_shared_objects.txt
+ 1385  echo "" >> task4_shared_objects.txt
+ 1386  echo "--- Dynamic linker config (/etc/ld.so.conf) ---" >> task4_shared_objects.txt
+ 1387  cat /etc/ld.so.conf >> task4_shared_objects.txt
+ 1388  echo "" >> task4_shared_objects.txt
+ 1389  echo "--- Include files in /etc/ld.so.conf.d/ ---" >> task4_shared_objects.txt
+ 1390  ls /etc/ld.so.conf.d/ >> task4_shared_objects.txt
+ 1391  cat /etc/ld.so.conf.d/*.conf >> task4_shared_objects.txt 2>&1
+ 1392  echo "" >> task4_shared_objects.txt
+ 1393  echo "--- Checking if /bin/ls is dynamically linked ---" >> task4_shared_objects.txt
+ 1394  file /bin/ls >> task4_shared_objects.txt
+ 1395  echo "" >> task4_shared_objects.txt
+ 1396  echo "--- ELF header of /bin/ls ---" >> task4_shared_objects.txt
+ 1397  readelf -h /bin/ls 2>/dev/null | head -20 >> task4_shared_objects.txt
+ 1398  echo "" >> task4_shared_objects.txt
+ 1399  echo "--- Shared libraries loaded by current shell (from /proc) ---" >> task4_shared_objects.txt
+ 1400  cat /proc/$$/maps | grep '\.so' | awk '{print $6}' | sort -u >> task4_shared_objects.txt
+ 1401  echo "--- Challenge Shared Objects ---" >> task4_shared_objects.txt
+ 1402  echo "--- 4a: shared libraries used by /usr/bin/ssh ---" >> task4_shared_objects.txt
+ 1403  ldd /usr/bin/ssh >> task4_shared_objects.txt 2>&1
+ 1404  echo "--- 4b: libm files in /lib/x86_64-linux-gnu/ ---" >> task4_shared_objects.txt
+ 1405  ls /lib/x86_64-linux-gnu/libm* >> task4_shared_objects.txt 2>&1
+ 1406  echo "--- 4c: real file behind libc.so.6 ---" >> task4_shared_objects.txt
+ 1407  readlink -f /lib/x86_64-linux-gnu/libc.so.6 >> task4_shared_objects.txt 2>&1
+ 1408  ls -la /lib/x86_64-linux-gnu/libc.so.6 >> task4_shared_objects.txt 2>&1
+ 1409  echo "--- 4d: shared libraries of compiled test program ---" >> task4_shared_objects.txt
+ 1410  echo 'int main() { return 0; }' > /tmp/test_link.c
+ 1411  gcc /tmp/test_link.c -o /tmp/test_link 2>/dev/null
+ 1412  ldd /tmp/test_link >> task4_shared_objects.txt 2>&1
+ 1413  git add .
+ 1414  git commit -m "Task 4 complete - shared objects exploration"
+ 1415  git pull --rebase
+ 1416  git push
+ 1417  mkdir -p shared_lib_lab
+ 1418  cd shared_lib_lab
+ 1419  echo "=== Task 5: Build and Register a Shared Library ===" > ../task5_shared_library.txt
+ 1420  cat > techcorp_sysinfo.h << 'EOF'
+#ifndef TECHCORP_SYSINFO_H
+#define TECHCORP_SYSINFO_H
+
+// Returns the hostname of the machine
+const char* tc_get_hostname(void);
+
+// Returns the current uptime in a human-readable string
+const char* tc_get_uptime(void);
+
+// Returns the number of CPU cores
+int tc_get_cpu_count(void);
+
+#endif
+EOF
+
+ 1421  echo "--- API Design (header file) ---" >> ../task5_shared_library.txt
+ 1422  cat techcorp_sysinfo.h >> ../task5_shared_library.txt
+ 1423  cat > sysinfo_test.c << 'EOF'
+#include <stdio.h>
+#include "techcorp_sysinfo.h"
+
+int main(void) {
+    printf("=== TechCorp System Info Report ===\n");
+    printf("Hostname : %s\n", tc_get_hostname());
+    printf("Uptime   : %s\n", tc_get_uptime());
+    printf("CPU Cores: %d\n", tc_get_cpu_count());
+    printf("===================================\n");
+    return 0;
+}
+EOF
+
+ 1424  echo "" >> ../task5_shared_library.txt
+ 1425  echo "--- Partner B: Test program written ---" >> ../task5_shared_library.txt
+ 1426  cat sysinfo_test.c >> ../task5_shared_library.
+ 1427  echo "=== Full Command History ===" > task_history.txt
+ 1428  history | tail -n 100 >> task_history.txt
