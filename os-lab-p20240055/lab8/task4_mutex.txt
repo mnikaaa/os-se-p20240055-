@@ -1,0 +1,61 @@
+=== launching bot swarm payload ===
+Purchase successful! Remaining stock: 98
+Purchase successful! Remaining stock: 96
+Purchase successful! Remaining stock: 94
+Purchase successful! Remaining stock: 92
+Purchase successful! Remaining stock: 90
+Purchase successful! Remaining stock: 88
+Purchase successful! Remaining stock: 86
+Purchase successful! Remaining stock: 84
+Purchase successful! Remaining stock: 82
+Purchase successful! Remaining stock: 80
+Purchase successful! Remaining stock: 78
+Purchase successful! Remaining stock: 76
+Purchase successful! Remaining stock: 74
+Purchase successful! Remaining stock: 72
+Purchase successful! Remaining stock: 70
+Purchase successful! Remaining stock: 68
+Purchase successful! Remaining stock: 66
+Purchase successful! Remaining stock: 64
+Purchase successful! Remaining stock: 62
+Purchase successful! Remaining stock: 60
+Purchase successful! Remaining stock: 58
+Purchase successful! Remaining stock: 56
+Purchase successful! Remaining stock: 54
+Purchase successful! Remaining stock: 52
+Purchase successful! Remaining stock: 50
+Purchase successful! Remaining stock: 48
+Purchase successful! Remaining stock: 46
+Purchase successful! Remaining stock: 44
+Purchase successful! Remaining stock: 42
+Purchase successful! Remaining stock: 40
+Purchase successful! Remaining stock: 38
+Purchase successful! Remaining stock: 36
+Purchase successful! Remaining stock: 34
+Purchase successful! Remaining stock: 32
+Purchase successful! Remaining stock: 30
+Purchase successful! Remaining stock: 28
+Purchase successful! Remaining stock: 26
+Purchase successful! Remaining stock: 24
+Purchase successful! Remaining stock: 22
+Purchase successful! Remaining stock: 20
+Purchase successful! Remaining stock: 18
+Purchase successful! Remaining stock: 16
+Purchase successful! Remaining stock: 14
+Purchase successful! Remaining stock: 12
+Purchase successful! Remaining stock: 10
+Purchase successful! Remaining stock: 8
+Purchase successful! Remaining stock: 6
+Purchase successful! Remaining stock: 4
+Purchase successful! Remaining stock: 2
+Purchase successful! Remaining stock: 0
+Swarm simulation completed safely.
+=== validation tracking metrics ===
+Final Remaining Inventory (Should be exactly 0):
+0
+Last 5 lines of audited history logs:
+[p20240055] [SUCCESS] Bot_22 bought 2 widgets.
+[p20240055] [SUCCESS] Bot_38 bought 2 widgets.
+[p20240055] [SUCCESS] Bot_37 bought 2 widgets.
+[p20240055] [SUCCESS] Bot_41 bought 2 widgets.
+[p20240055] [SUCCESS] Bot_46 bought 2 widgets.
