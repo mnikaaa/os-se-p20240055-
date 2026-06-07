@@ -1,0 +1,9 @@
+#!/bin/bash
+for file in *; do
+    [ -f "$file" ] || continue
+    [ "$file" = "cleanup" ] && continue
+    ext="${file##*.}"
+    [ "$ext" = "$file" ] && continue
+    mkdir -p "$ext"
+    mv "$file" "$ext/"
+done
