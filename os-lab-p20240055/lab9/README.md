@@ -23,3 +23,11 @@
 8. Stuck processes still hold locks and will block any future scripts from running, so checking for them ensures a clean state before finishing.
 
 ## Screenshots
+<img width="1083" height="417" alt="level1_vaults" src="https://github.com/user-attachments/assets/e9d9b490-ff0c-43ec-8862-f04734ec4f68" />
+<img width="785" height="518" alt="level3_local_deadlock" src="https://github.com/user-attachments/assets/42fa6ce3-aadd-4c66-a413-aec8b2fe852f" />
+<img width="741" height="482" alt="level4_cross_deadlock" src="https://github.com/user-attachments/assets/84b02706-b012-472a-845f-e7a6a89a64e7" />
+<img width="741" height="482" alt="level5_ordering_patch" src="https://github.com/user-attachments/assets/805e4b6d-e488-4a18-af0f-df03ec78ccd8" />
+<img width="708" height="348" alt="level5_ordering_patch2" src="https://github.com/user-attachments/assets/4638694e-797b-44a1-a1d0-c7ae179a3f04" />
+<img width="716" height="155" alt="level6_timeout_recovery" src="https://github.com/user-attachments/assets/c27b6f66-65ca-42c9-99b6-490be783ef14" />
+<img width="716" height="155" alt="level6_timeout_recovery2" src="https://github.com/user-attachments/assets/f4232eae-54ac-4e03-a611-b0f5d2b9071c" />
+<img width="716" height="293" alt="level7_teardown" src="https://github.com/user-attachments/assets/0037bb97-2c8f-43c7-a98f-f5b95010724e" />
