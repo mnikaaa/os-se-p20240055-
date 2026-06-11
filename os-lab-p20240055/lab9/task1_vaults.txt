@@ -1,0 +1,11 @@
+=== working folder ===
+/home/se-thai-monika/os-se-p20240055-/os-lab-p20240055/lab9
+=== vault directories ===
+drwxrwxr-x 2 se-thai-monika se-thai-monika 4096 Jun 11 15:58 /home/se-thai-monika/os-lab-deadlock/vault_alpha
+drwxrwxr-x 2 se-thai-monika se-thai-monika 4096 Jun 11 15:58 /home/se-thai-monika/os-lab-deadlock/vault_beta
+=== vault lock files ===
+-rw-rw-r-- 1 se-thai-monika se-thai-monika 0 Jun 11 15:58 /home/se-thai-monika/os-lab-deadlock/vault_alpha/vault.lock
+-rw-rw-r-- 1 se-thai-monika se-thai-monika 0 Jun 11 15:58 /home/se-thai-monika/os-lab-deadlock/vault_beta/vault.lock
+=== vault marker files ===
+Vault Alpha local resource for p20240055
+Vault Beta local resource for p20240055

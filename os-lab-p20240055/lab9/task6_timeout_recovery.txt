@@ -1,0 +1,5 @@
+=== sync_timeout permissions ===
+-rwxrwxr-x 1 se-thai-monika se-thai-monika 585 Jun 11 16:47 /home/se-thai-monika/bin/sync_timeout
+=== timeout evidence ===
+Script printed ERROR and exited with nonzero status.
+=== process check after stopping old script ===
